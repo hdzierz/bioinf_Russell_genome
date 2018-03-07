@@ -35,7 +35,7 @@ process load_into_contig{
 
    executor 'lsf'
 
-   publishDir "$baseDir/012.khmer", mode: "copy" 
+   publishDir "012.khmer", mode: "copy" 
 
    input:
    file "ilreads.fastq.gz" from ilreadsm
@@ -54,7 +54,7 @@ process abundance_dist{
     module "khmer"
     executor "lsf"
 
-    publishDir "$baseDir/012.khmer", mode: "copy"
+    publishDir "012.khmer", mode: "copy"
 
     input:
     file "reads.ct" from counts
