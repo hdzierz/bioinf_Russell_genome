@@ -1,6 +1,6 @@
 //params.reads = "$baseDir/001.Data.sample/Rus*_R{1,2}.fastq.gz"
 
-params.reads = "$baseDir/003.Data.trimmomatic/Rus*trimmed*_R{1,2}.fastq.gz"
+params.reads = "003.Data.trimmomatic/Rus*trimmed*_R{1,2}.fastq.gz"
 
 Channel
     .fromFilePairs( params.reads )
